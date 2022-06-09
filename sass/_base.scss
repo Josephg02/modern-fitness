@@ -1,5 +1,6 @@
 :root {
-    content: "#";
+    --color-primary: #fff;
+    --color-secondary: #1a1919;
 }
 
 * {
@@ -16,4 +17,12 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+}
+
+body {
+    line-height: 1.6;
+    background-size: color;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
 }
