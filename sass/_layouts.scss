@@ -1,0 +1,12 @@
+.container {
+    max-height: 180rem;
+    max-width: 150rem;
+}
+
+.header {
+    height: 10rem;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

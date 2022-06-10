@@ -23,9 +23,54 @@ html {
 
 body {
   line-height: 1.6;
-  background-size: color;
+  background-color: cover;
   background-repeat: no-repeat;
   font-family: 'Roboto Condensed', sans-serif;
   min-height: 100vh;
+  background-color: var(--color-secondary);
+  margin-top: -1.5rem;
+}
+
+.container {
+  max-height: 180rem;
+  max-width: 150rem;
+}
+
+.header {
+  height: 10rem;
+  background-color: var(--color-primary);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  height: 20rem;
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.top-nav__item {
+  padding-right: 2rem;
+  font-size: 2rem;
+}
+
+.top-nav__link {
+  text-decoration: none;
+  color: var(--color-secondary);
 }
 /*# sourceMappingURL=main.css.map */

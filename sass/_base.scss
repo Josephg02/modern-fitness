@@ -21,8 +21,10 @@ html {
 
 body {
     line-height: 1.6;
-    background-size: color;
+    background-color: cover;
     background-repeat: no-repeat;
     font-family: 'Roboto Condensed', sans-serif;
     min-height: 100vh;
+    background-color: var(--color-secondary);
+    margin-top: -1.5rem;
 }
