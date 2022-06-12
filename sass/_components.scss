@@ -8,13 +8,80 @@
     list-style: none;
 
     &__item {
-        padding-right: 2rem;
+        padding-right: 5rem;
         font-size: 2rem;
     }
 
     &__link {
         text-decoration: none;
         color: var(--color-secondary);
+        position: relative;
+        
+        &::after {
+            border-top: .1em solid black;
+            content: "";
+            position: absolute;
+            right: 100%;
+            bottom: -.10em;
+            left: 0;
+            transition: right .8s cubic-bezier(0,.5,0,1);
+        }
+
+        &:hover::after {
+            right: 0;
+        }
     }
- 
+}  
+ ///////////BUTTON
+.container-btn {
+    width: 20rem;
+    height: 40rem;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
 }
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid var(--color-secondary);
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: var(--color-primary);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: var(--color-primary);
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: var(--color-secondary);
+    font-size: 18px;
+    font-weight: 100;
+  }
+ /////////END OF BUTTON
