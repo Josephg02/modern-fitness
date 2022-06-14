@@ -10,3 +10,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.main {
+    background-image: url(../img/gym.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    height: 95vh;
+}

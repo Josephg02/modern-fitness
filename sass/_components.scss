@@ -1,5 +1,6 @@
 .logo {
-    height: 20rem;
+    height: 23rem;
+    padding-top: 2.3rem;
 }
 
 .top-nav {
@@ -44,14 +45,14 @@
     padding-right: 50px;
 }
 .center {
-    width: 180px;
-    height: 60px;
+    width: 18rem;
+    height: 6rem;
     position: absolute;
   }
   
   .btn {
-    width: 180px;
-    height: 60px;
+    width: 18rem;
+    height: 6rem;
     cursor: pointer;
     background: transparent;
     border: 2px solid var(--color-secondary);
@@ -82,6 +83,7 @@
   .btn span {
     color: var(--color-secondary);
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 400;
   }
  /////////END OF BUTTON
+ 
