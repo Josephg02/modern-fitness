@@ -62,6 +62,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 70rem;
 }
 
 .logo {
@@ -169,46 +170,48 @@ svg {
 
 .flip-card {
   background-color: transparent;
-  width: 40rem;
-  height: 40rem;
-  border: 1px #f1f1f1;
+  width: 100%;
+  height: 50%;
   -webkit-perspective: 100rem;
           perspective: 100rem;
-  margin-left: 5rem;
+  margin: 3rem;
+  padding-left: 5rem;
 }
 
-.flip-card__inner {
+.flip-card .flip-card-inner {
+  width: 30rem;
+  height: 40rem;
   position: relative;
-  width: 100%;
-  height: 100%;
   text-align: center;
-  -webkit-transform: transform 0.8s;
-          transform: transform 0.8s;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
 }
 
-.flip-card__inner:hover {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.flip-card__front, .flip-card__back {
+.flip-card .flip-card-inner__front, .flip-card .flip-card-inner__back {
   position: absolute;
   width: 100%;
   height: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.flip-card__front {
+.flip-card .flip-card-inner__front {
   background-color: #bbb;
   color: black;
 }
 
-.flip-card__back {
+.flip-card .flip-card-inner__back {
   background-color: dodgerblue;
   color: white;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
