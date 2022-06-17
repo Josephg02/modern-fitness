@@ -42,7 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 50px;
+    padding-right: 5rem;
 }
 .center {
     width: 18rem;
@@ -58,6 +58,15 @@
     border: 2px solid var(--color-secondary);
     outline: none;
     transition: 1s ease-in-out;
+
+    &:hover {
+      transition: 1s ease-in-out;
+      background: var(--color-primary);
+    }
+
+    &:hover svg {
+      stroke-dashoffset: -480;
+    }
   }
   
   svg {
@@ -71,18 +80,9 @@
     transition: 1s ease-in-out;
   }
   
-  .btn:hover {
-    transition: 1s ease-in-out;
-    background: var(--color-primary);
-  }
-  
-  .btn:hover svg {
-    stroke-dashoffset: -480;
-  }
-  
   .btn span {
     color: var(--color-secondary);
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 400;
   }
  /////////END OF BUTTON
@@ -110,21 +110,75 @@
       height: 100%;
       -webkit-backface-visibility: hidden; 
       backface-visibility: hidden;
+      color: black;
+      background-color: var(--color-primary);
     }
     
     &__front {
-      background-color: #bbb;
-      color: black;
+      .standard, .advanced, .pro {
+        font-size: 3rem;
+        padding-top: 1rem;
+      }
     }
     
     &__back {
-      background-color: dodgerblue;
-      color: white;
-      transform: rotateY(180deg);
+     transform: rotateY(180deg);
+  
+    .price-box {
+      &__only {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+
+      &__price {
+        font-size: 5rem;
+      }
+    }
+
+    .button {
+        border-radius: 4px;
+        background-color: var(--color-secondary);
+        border: none;
+        color: #fff;
+        text-align: center;
+        font-size: 3.2rem;
+        padding: 1.6rem;
+        width: 22rem;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 3.6rem;
+        box-shadow: 0 1rem 2rem -8px rgba(0, 0, 0,.7);
+      }
+        button {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+
+          &::after {
+            content: '»';
+            position: absolute;
+            opacity: 0;  
+            top: 1.4rem;
+            right: -2rem;
+            transition: 0.5s;
+          }
+
+          &:hover{
+            padding-right: 2.4rem;
+            padding-left:8px;
+          }
+
+          &:hover:after {
+            opacity: 1;
+            right: 1rem;
+          }
+        }
+      }
     }
   }
-}
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
 ///////END OF CARDS
