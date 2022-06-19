@@ -207,6 +207,21 @@ svg {
   padding-top: 1rem;
 }
 
+.flip-card .flip-card-inner__front .benefits {
+  width: 80%;
+  padding-left: 6rem;
+  position: relative;
+  text-align: center;
+  list-style: none;
+  padding-top: 2rem;
+}
+
+.flip-card .flip-card-inner__front .benefits__items {
+  margin: 2rem;
+  font-size: 2rem;
+  border-bottom: 2px solid #eee;
+}
+
 .flip-card .flip-card-inner__back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
@@ -220,6 +235,7 @@ svg {
 
 .flip-card .flip-card-inner__back .price-box__price {
   font-size: 5rem;
+  margin-bottom: 4rem;
 }
 
 .flip-card .flip-card-inner__back .button {
