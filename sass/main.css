@@ -205,6 +205,8 @@ svg {
 .flip-card .flip-card-inner__front .standard, .flip-card .flip-card-inner__front .advanced, .flip-card .flip-card-inner__front .pro {
   font-size: 3rem;
   padding-top: 1rem;
+  background: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .flip-card .flip-card-inner__front .benefits {
@@ -233,9 +235,13 @@ svg {
   margin-top: 2rem;
 }
 
+.flip-card .flip-card-inner__back .price-box__per-month {
+  font-size: 3rem;
+}
+
 .flip-card .flip-card-inner__back .price-box__price {
   font-size: 5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .flip-card .flip-card-inner__back .button {

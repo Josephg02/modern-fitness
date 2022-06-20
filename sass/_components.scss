@@ -119,6 +119,8 @@
       .standard, .advanced, .pro {
         font-size: 3rem;
         padding-top: 1rem;
+        background: var(--color-secondary);
+        color: var(--color-primary);
       }
       .benefits {
         width: 80%;
@@ -146,9 +148,13 @@
         margin-top: 2rem;
       }
 
+      &__per-month {
+        font-size: 3rem;
+      }
+
       &__price {
         font-size: 5rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
       }
     }
 
